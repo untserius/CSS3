@@ -1,0 +1,22 @@
+table.one th, td {
+	border: 2px solid black;
+	border-collapse: collapse;
+}
+
+table.one {
+	text-align: justify;
+	width: 100%;
+	border-collapse: collapse;
+	}
+
+table.one th {
+	height: 70px;
+	}
+
+
+table.two {
+	border-collapse: collapse;
+	text-align: justify;	
+	width: 50%;
+
+}

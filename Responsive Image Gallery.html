@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RIG</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            background-color:darkblue;
+            color: white;
+        }
+
+        .header {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 40px;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 4px;
+        }
+
+        .column {
+            flex: 25%;
+            max-width: 25%;
+            padding: 0 4px;
+        }
+
+        .column img {
+            margin-top: 8px;
+            vertical-align: middle;
+        }
+
+        @media screen and (max-width: 992px) {
+            .column {
+                flex: 50%;
+                max-width: 50%;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .column {
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Odisha - India's Best Kept Secret</h1>
+
+        <h3>This is a responsive image gallery of different sightseeing places inside Odisha.</h3>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <img src="puri temple.jpg" width="100%">
+            <img src="konark.jpg" width="100%">
+            <img src="chilika.jpg" width="100%">
+            <img src="dhauligiri.jpg" width="100%">
+            <img src="Chandipur-beach-Orissa.jpg" width="100%">
+            <img src="hirakud.jpg" width="100%">
+            <img src="duduma.jpg" width="100%">
+            <img src="lingaraj.jpg" width="100%">
+        </div>
+
+        <div class="column">
+            <img src="Gopalpur.jpg" width="100%">
+            <img src="rajhans.jpg" width="100%">
+            <img src="chilika2.jpg" width="100%">
+            <img src="satapada.jpg" width="100%">
+            <img src="deomali.jpeg" width="100%">
+            <img src="deomali2.jpg" width="100%">
+            <img src="deomali3.webp" width="100%">
+            <img src="puri beach.jpg" width="100%">
+        </div>
+
+        <div class="column">
+            <img src="puri temple.jpg" width="100%">
+            <img src="konark.jpg" width="100%">
+            <img src="chilika.jpg" width="100%">
+            <img src="dhauligiri.jpg" width="100%">
+            <img src="Chandipur-beach-Orissa.jpg" width="100%">
+            <img src="hirakud.jpg" width="100%">
+            <img src="duduma.jpg" width="100%">
+            <img src="lingaraj.jpg" width="100%">
+        </div>
+
+        <div class="column">
+            <img src="Gopalpur.jpg" width="100%">
+            <img src="rajhans.jpg" width="100%">
+            <img src="chilika2.jpg" width="100%">
+            <img src="satapada.jpg" width="100%">
+            <img src="deomali.jpeg" width="100%">
+            <img src="deomali2.jpg" width="100%">
+            <img src="deomali3.webp" width="100%">
+            <img src="puri beach.jpg" width="100%">
+        </div>
+    </div>
+</body>
+</html>

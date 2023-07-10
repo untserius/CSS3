@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>media queries examples</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            .topnav {
+                background-color: #333;
+                overflow: hidden;
+            }
+
+            .topnav a {
+                display: block;
+                text-align: center;
+                color: white;
+                text-decoration: none;
+                padding: 10px 20px;
+                float: left;
+            }
+
+            .topnav a:hover {
+                background-color: limegreen;
+                color: black;
+            }
+
+            @media screen and (max-width: 600px) {
+                .topnav a {
+                    float: none;
+                    display: block;
+                    width: 100%;
+                }
+            }
+
+            .column {
+                float: left;
+                width: 25%;
+                padding: 10px;
+                text-align: justify;
+            }
+
+            .column::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+            
+            @media screen and (max-width: 992px) {
+                .column {
+                    width: 50%;
+                }
+            }
+
+            @media screen and (max-width: 600px) {
+                .column {
+                    width: 100%;
+                }
+            }
+
+            h3 {
+                background-color: #bbb;
+                padding: 5px;
+                text-align: center;
+            }
+
+            .fontchange {
+                text-align: center;
+                font-size: 40px;
+                background-color: black;
+                color: white;
+                padding: 10px 20px;
+
+            }
+
+            @media screen and (max-width: 600px) {
+                .fontchange {
+                    font-size: 20px;
+                }
+            }
+
+            .hiddentext {
+                display: none;
+                text-align: justify;
+                background-color: #ffff00b3;
+                padding: 10px 20px;
+            }
+
+            @media screen and (min-width: 600px) {
+                .hiddentext {
+                    display: block;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>MQ examples</h1>
+
+        <h2>Menu Bar</h2>
+
+        <div class="topnav">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Help</a>
+        </div>
+
+        <h2>Columns</h2>
+
+        <div class="row">
+            <div class="column">
+                <h3>C1</h3>
+                <p>Officia tempor qui ex fugiat do sint reprehenderit aliquip nulla labore in id. Elit amet qui irure adipisicing nostrud minim laborum nulla enim ullamco aute in aliqua. Magna eu et non officia eu cillum nulla voluptate excepteur fugiat ad laborum sunt ea. Quis cupidatat aliquip aliqua fugiat magna duis eu Lorem ex. Commodo ullamco ad ullamco dolore sunt eu consectetur do minim.</p>
+            </div>
+
+            <div class="column">
+                <h3>C2</h3>
+                <p>Id enim laborum ea velit dolor in aute labore ut nisi quis officia. Esse fugiat elit non reprehenderit velit laborum ad amet laborum commodo eu reprehenderit laboris. Tempor pariatur deserunt incididunt sint adipisicing officia qui cillum. Consequat minim qui dolore est esse deserunt dolor enim enim non id. Ipsum ipsum minim excepteur ut anim velit tempor amet esse sunt nisi tempor.</p>
+            </div>
+
+            <div class="column">
+                <h3>C3</h3>
+                <p>Fugiat in magna quis commodo ad deserunt labore dolor et labore. Excepteur velit ullamco id consequat cupidatat qui mollit occaecat officia nostrud ad aliquip. Est amet ullamco duis do eu ad velit adipisicing eiusmod est est consequat nostrud aliqua. Deserunt sunt irure anim labore amet anim quis minim. Commodo minim nisi id exercitation. Ad ut eiusmod ullamco eu laborum est cupidatat elit minim non.</p>
+            </div>
+
+            <div class="column">
+                <h3>C4</h3>
+                <p>Qui tempor labore elit minim incididunt reprehenderit. Magna ipsum labore pariatur occaecat quis in pariatur mollit eiusmod exercitation sit ipsum magna minim. Tempor elit cillum proident deserunt aliquip in. Aute commodo irure pariatur sint mollit culpa quis enim aliqua sint ea. Voluptate labore aute duis esse non tempor ad eu. Labore aliqua fugiat aliqua consequat id consectetur commodo duis.</p>
+            </div>
+        </div>
+
+        <h2>Hidden Text and Font Size Manipulation</h2>
+
+        <div class=fontchange>
+            <p>Responsive Image Gallery</p>
+        </div>
+
+        <div class="hiddentext">
+            <p>A responsive images gallery is a design element that adjusts and adapts its layout and appearance based on the screen size or device being used to view it. It ensures that the gallery and its images are displayed optimally on various devices, such as desktop computers, laptops, tablets, and mobile phones.</p>
+        </div>
+    </body>
+</html>

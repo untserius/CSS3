@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Text Effects</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <style>
+            .type1 {
+                white-space: nowrap;
+                width: 300px;
+                border: 1px solid;
+                overflow: hidden;
+                text-overflow: clip;
+            }
+
+            .type2 {
+                white-space: nowrap;
+                width: 300px;
+                border: 1px solid;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            .type2:hover {
+                overflow: visible;
+            }
+
+            .type3 {
+                width: 300px;
+                border: 1px solid;
+            }
+
+            .type4 {
+                width: 300px;
+                border: 1px solid;
+                word-wrap: break-word;
+            }
+
+            .type5 {
+                width: 200px;
+                border: 1px solid;
+            }
+
+            .type6 {
+                width: 200px;
+                border: 1px solid;
+                word-break: break-all;
+            }
+
+            .type7 {
+                writing-mode: vertical-rl;
+            }
+
+            span {
+                writing-mode: horizontal-tb;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>text-overflow</h1>
+
+        <h3>clip:</h3>
+        <p class="type1">
+            It is important to take care of the patient, to be followed by the doctor, but it is a time of great pain and suffering. For to come to the smallest detail, no one should practice any kind of work unless he derives some benefit from it.
+        </p>
+
+        <h3>ellipsis:</h3>
+        <p class="type2">
+            It is important to take care of the patient, to be followed by the doctor, but it is a time of great pain and suffering. For to come to the smallest detail, no one should practice any kind of work unless he derives some benefit from it.
+        </p>
+
+        <h1>word-wrap</h1>
+        
+        <h3>without word-wrap</h3>
+        <p class="type3">This is a very long worrrrrrrrrrrrrrrrrrrrrrrrrrrdddddddddddddddddddddddddddd.</p>
+
+        <h3>word-wrap</h3>
+        <p class="type4">This is a very long worrrrrrrrrrrrrrrrrrrrrrrrrrrdddddddddddddddddddddddddddd.</p>
+
+        <h1>word-break</h1>
+        
+        <h3>without word-break</h3>
+        <p class="type5">
+            It is important to take care of the patient, to be followed by the doctor, but it is a time of great pain and suffering. For to come to the smallest detail, no one should practice any kind of work unless he derives some benefit from it.
+        </p>
+
+        <h3>word-break</h3>
+        <p class="type6">
+            It is important to take care of the patient, to be followed by the doctor, but it is a time of great pain and suffering. For to come to the smallest detail, no one should practice any kind of work unless he derives some benefit from it.
+        </p>
+
+        <h1>writing-mode</h1>
+
+        <p class="type7">Hi! I am Sudhir. <span>I live in Odisha, India.</span> I am a Frontend Developer.</p>
+    </body>
+</html>

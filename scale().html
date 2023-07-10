@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>2D Transformations</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <style>
+         div.original {
+            border: 1px solid;
+            width: 250px;
+            height: 150px;
+            background-color: rgba(0, 0, 255, 1);
+        }
+
+        div.modified {
+            margin: 300px;
+            border: 1px solid;
+            width: 250px;
+            height: 150px;
+            background-color: rgba(0, 0, 255, 0.5);
+            transform: scale(3, 2);
+        }
+
+        div.modified2 {
+            border: 1px solid;
+            width: 250px;
+            height: 150px;
+            background-color: rgba(0, 0, 255, 0.5);
+            transform: scale(0.5, 0.5);
+        }
+
+        div.modified3 {
+            margin: 300px;
+            border: 1px solid;
+            width: 250px;
+            height: 150px;
+            background-color: rgba(0, 0, 255, 0.5);
+            transform: scaleX(3);
+        }
+
+        div.modified4 {
+            margin: 200px;
+            border: 1px solid;
+            width: 250px;
+            height: 150px;
+            background-color: rgba(0, 0, 255, 0.5);
+            transform: scaleY(3);
+        }
+
+        div.modified5 {
+            margin: 200px;
+            border: 1px solid;
+            width: 250px;
+            height: 150px;
+            background-color: rgba(0, 0, 255, 0.5);
+            transform: skewX(20deg);
+        }
+
+        div.modified6 {
+            margin: 200px;
+            border: 1px solid;
+            width: 250px;
+            height: 150px;
+            background-color: rgba(0, 0, 255, 0.5);
+            transform: skewY(30deg);
+        }
+
+        div.modified7 {
+            margin: 200px;
+            border: 1px solid;
+            width: 250px;
+            height: 150px;
+            background-color: rgba(0, 0, 255, 0.5);
+            transform: skew(30deg, 20deg);
+        }
+
+        div.modified8 {
+            margin: 200px;
+            border: 1px solid;
+            width: 250px;
+            height: 150px;
+            background-color: rgba(0, 0, 255, 0.5);
+            transform: matrix(1, -0.3, 0, 1, 0, 0);
+        }
+    </style>
+
+    <body>
+        <h1>scale()</h1>
+
+        <div class="original">
+            <p>Original div position.</p>
+        </div>
+
+        <div class="modified">
+            <p>Trasformed div position. 3x width & 2x height</p>
+        </div>
+
+        <div class="modified2">
+            <p>Trasformed div position. 0.5x width & 0.5x height</p>
+        </div>
+
+        <div class="modified3">
+            <p>Trasformed div position.
+                scaleX() method.
+            </p>
+        </div>
+
+        <div class="modified4">
+            <p>Trasformed div position.
+                scaleY() method.
+            </p>
+        </div>
+
+        <div class="modified5">
+            <p>Trasformed div position.
+                skewX() method.
+            </p>
+        </div>
+
+        <div class="modified6">
+            <p>Trasformed div position.
+                skewY() method.
+            </p>
+        </div>
+
+        <div class="modified7">
+            <p>Trasformed div position.
+                skew() method.
+            </p>
+        </div>
+
+        <div class="modified8">
+            <p>Trasformed div position.
+                matrix() method.
+            </p>
+
+            <p>SYNTAX- matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY())</p>
+        </div>
+    </body>
+</html>

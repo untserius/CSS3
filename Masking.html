@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <title>Masking</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <style>
+        .mask1 {
+            -webkit-mask-image: url(visual-studio-code.svg);
+            mask-image: url(visual-studio-code.svg);
+            -webkit-mask-repeat: no-repeat;
+            mask-repeat: no-repeat;
+        }
+
+        .mask2 {
+            -webkit-mask-image: url(visual-studio-code.svg);
+            mask-image: url(visual-studio-code.svg);
+            -webkit-mask-repeat:repeat;
+            mask-repeat: repeat;
+        }
+
+        .lineargradient {
+            -webkit-mask-image: linear-gradient(black, transparent);
+            mask-image: linear-gradient(black, transparent);
+        }
+
+        .mask3 {
+            max-width: 600px;
+            height: 350px;
+            overflow-y: scroll;
+            background: url(punta\ cana.jpg) no-repeat;
+            -webkit-mask-image: linear-gradient(black, transparent);
+            mask-image: linear-gradient (black, transparent);
+
+            font-size: 20px;
+            padding: 20px;
+            text-align: justify;
+            color: white;
+        }
+
+        .radialgradient {
+            -webkit-mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0.5) 50%);
+            mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0.5) 50%);
+        }
+    </style>
+    <body>
+        <h1>Masking</h1>
+
+        <h2>Masked Image</h2>
+        <div class="mask1">
+            <img src="road.jpeg" width="500px">
+        </div>
+
+        <h2>Original Image</h2>
+        <img src="road.jpeg" width="500px">
+
+        <h2>Repeated Mask Image</h2>
+        <div class="mask2">
+            <img src="sweden.jpg">
+        </div>
+
+        <h1>Gradients as Mask Image</h1>
+
+        <h2>Linear Gradient Examples</h2>
+
+        <div class="lineargradient">
+            <img src="Swiss Alps.jpg">
+        </div>
+
+        <h2>Linear Gradient Examples with text</h2>
+        <div class="mask3">
+            <p>Punta Cana is a resort town in the easternmost region of the Dominican Republic. It is part of the Veron–Punta Cana municipal district, in the Higüey municipality of La Altagracia Province. According to the 2010 census, this district had a population of 54.128 inhabitants.</p>
+
+            <p>Punta Cana is the second-most popular tourist destination in Latin America, with more visitors than any other city in the Caribbean region.[citation needed] The Punta Cana International Airport (PUJ) is located about 3 km inland, on the highway that leads from Higüey to La Romana. This airport receives 64% of all flights that arrive in the Dominican Republic, receiving more passengers than the Las Américas International Airport, located in Santo Domingo, the country's capital.</p>
+
+            <p>The area is known for its white sand beaches, blue turquoise waters, and balnearios which face both the Caribbean Sea and the Atlantic Ocean. The weather is hot for most of the year, especially in late summer and autumn when the Northern Tropics receive their most direct sunlight.</p>
+        </div>
+
+        <h2>Radial Gradient Examples</h2>
+        <div class="radialgradient">
+            <img src="Hawai.jpg" width="500px">
+        </div>
+    </body>
+</html>

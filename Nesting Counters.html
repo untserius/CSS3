@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nesting Counters</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <style>
+            h1 {
+                text-align: center;
+            }
+
+            div {
+                text-align: justify;
+                border: 1px solid black;
+                background-color: grey;
+                color: white;
+                padding: 15px 20px;
+                text-indent: 30px;
+            }
+            body {
+                counter-reset: section;
+            }
+
+            h2 {
+                counter-reset: subsection;
+            }
+
+            h2::before {
+                counter-increment: section;
+                content: "Chapter "counter(section)". ";
+            }
+
+            h3::before {
+                counter-increment: subsection;
+                content: counter(section)"."counter(subsection)" ";
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Types of Micronutrients</h1>
+
+        <div>
+            <p>The term micronutrients is used to describe vitamins and minerals in general.
+
+                Macronutrients, on the other hand, include proteins, fats and carbohydrates.
+                
+                Your body needs smaller amounts of micronutrients relative to macronutrients. That is why they are labeled “micro.”</p>
+        </div>
+
+        <h2>Water-Soluble Vitamins</h2>
+        <h3>Vitamin B1 (thiamine)</h3>
+        <h3>Vitamin B2 (riboflavin)</h3>
+        <h3>Vitamin B3 (niacin)</h3>
+        <h3>Vitamin B5 (pantothenic acid)</h3>
+        <h3>Vitamin B6 (pyridoxine)</h3>
+        <h3>Vitamin B7 (biotin)</h3>
+        <h3>Vitamin B9 (folate)</h3>
+        <h3>Vitamin B12 (cobalamin)</h3>
+        <h3>Vitamin C (ascorbic acid)</h3>
+
+        <h2>Fat-Soluble Vitamins</h2>
+        <h3>Vitamin A</h3>
+        <h3>Vitamin D</h3>
+        <h3>Vitamin E</h3>
+        <h3>Vitamin K</h3>
+
+        <h2>Macrominerals</h2>
+        <h3>Calcium</h3>
+        <h3>Phosphorus</h3>
+        <h3>Magnesium</h3>
+        <h3>Sodium</h3>
+        <h3>Chloride</h3>
+        <h3>Potassium</h3>
+        <h3>Sulfur</h3>
+
+        <h2>Trace Minerals</h2>
+        <h3>Iron</h3>
+        <h3>Manganese</h3>
+        <h3>Copper</h3>
+        <h3>Zinc</h3>
+        <h3>Iodine</h3>
+        <h3>Fluoride</h3>
+        <h3>Selenium</h3>
+    </body>
+</html>

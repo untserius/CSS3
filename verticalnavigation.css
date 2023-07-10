@@ -1,0 +1,36 @@
+ul {
+    background-color: #FFE042;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 50%;
+    border: 1px solid black;
+}
+
+li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+
+
+li a:hover {
+    background-color: #E71989;
+    color: white;
+}
+
+.active {
+    background-color: #E71989;
+    color: white;
+}

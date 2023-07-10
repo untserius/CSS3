@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pseudo Class</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <style>
+            a:link {
+                text-decoration: none;
+            }
+
+            a:visited {
+                color: green;
+            }
+
+            a:hover {
+                color: black;
+            }
+
+            a.netflix:link {
+                color: orange;
+            }
+
+            a.netflix:hover {
+                color: orangered;
+                font-size: 50px;
+            }
+
+            div.danger:hover {
+                border: 2px solid black;
+                padding: 10px;
+                text-align: center;
+                background-color: red;
+                font-size: 30px;
+            }
+
+            p {
+                display: none;
+                background-color: skyblue;
+                padding: 10px;
+            }
+
+            div.april:hover p {
+                display: block;
+            }
+        </style>
+
+    </head>
+
+    <body>
+
+        <h1>Pseudo-classer</h1>
+        <h2>Anchor Pseudo-classes</h2>
+
+        <a href="https://www.google.com">Google Search</a>
+
+        <h2>Pseudo-classes and HTML Classes</h2>
+
+        <a class="netflix" href="https://www.netflix.com">Netflix</a>
+
+        <h2>Hover on div</h2>
+
+        <div class="danger">
+            <a href="https://www.fast.com">Don't Click! Danger!!!!</a>
+        </div>
+
+        <h2>Simple Tooltip Hover</h2>
+
+        <div class="april">Click Here to get 40$ !!!
+            <p>April Fool !!!! &#128514 &#128514 &#128514</p>
+        </div>
+
+        <h2>CSS - The :first-child Pseudo-class</h2>
+
+        <h3>Match the first p element</h3>
+
+        <p>Some content.</p>
+        <p>Some content.</p>
+        <p>Some content.</p>
+        <p>Some content.</p>
+    </body>
+</html>

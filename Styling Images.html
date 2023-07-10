@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Image Styling</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <style>
+            img.swissalps {
+                border: 2px solid black;
+                border-radius: 4px;
+                padding: 5px;
+                width: 150px;
+            }
+
+            img.rome {
+                border: 1px solid black;
+                border-radius: 4px;
+                padding: 5px;
+                width: 150px;
+            }
+
+            .rome:hover {
+                box-shadow: 2px 4px 2px 1px black;
+            }
+
+            img.tokyo {
+                width: 100%;
+                height: auto;
+            }
+
+            img.jeju {
+                display: block;
+                margin-right: auto;
+                margin-left: auto;
+                width: 50%;
+            }
+
+            div.polaroid {
+                width: 80%;
+                background-color: white;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+                margin-bottom: 25px;
+            }
+
+            div.container {
+                text-align: center;
+                padding: 10px 20px;
+            }
+
+            .blur {filter:blur(4px);}
+            .brightness {filter: brightness(250%);}
+            .contrast {filter: contrast(180%);}
+            .grayscale {filter: grayscale(100%);}
+            .huerotate {filter: hue-rotate(180deg);}
+            .invert {filter: invert(100%);}
+            .opacity {filter: opacity(50%);}
+            .saturate {filter: saturate(7);}
+            .sepia {filter: sepia(100%);}
+            .shadow {filter: drop-shadow(8px 8px 10px green);}
+
+
+        </style>
+    </head>
+
+    <body>
+        <h1>Image Styling</h1>
+
+        <h2>Rounded Images</h2>
+
+        <img style="border-radius: 10px;" src="punta cana.jpg" alt="Punta Cana" height="300px" width="500px">
+        <img style="border-radius: 50%;" src="punta cana.jpg" alt="Punta Cana" height="300px" width="500px">  
+
+        <h2>Thumbnail Images</h2>
+
+        <img class="swissalps" src="Swiss Alps.jpg" alt="Swiss Alps Mountain Range">
+
+        <h3>Thumbnail Image as a Link</h3>
+
+        <a target="_blank" href="Rome.jpg"><img class="rome" src="Rome.jpg" alt="Rome or Colleseum"></a>
+
+        <h2>Responsive Images</h2>
+
+        <img class="tokyo" src="Tokyo.jpg" alt="Tokyo Nightlife">
+
+        <h2>Center an Image</h2>
+
+        <img class="jeju" src="Jeju Island.jpg">
+
+        <h2> Polaroid Images</h2>
+
+        <div class="polaroid">
+            <img src="texas.jpg" alt="Texas" style="width: 100%">
+            <div class="container">
+                <p>West Texas</p>
+            </div>
+        </div>
+
+        <h2>Image Filters</h2>
+
+        <img class="alaska" src="alaska.jpg" alt="Jeju Island" width="70%">
+        <img class="blur" src="alaska.jpg" alt="Jeju Island" width="70%">
+        <img class="brightness" src="alaska.jpg" alt="Jeju Island" width="70%">
+        <img class="contrast" src="alaska.jpg" alt="Jeju Island" width="70%">
+        <img class="grayscale" src="alaska.jpg" alt="Jeju Island" width="70%">
+        <img class="huerotate" src="alaska.jpg" alt="Jeju Island" width="70%">
+        <img class="invert" src="alaska.jpg" alt="Jeju Island" width="70%">
+        <img class="opacity" src="alaska.jpg" alt="Jeju Island" width="70%">
+        <img class="saturate" src="alaska.jpg" alt="Jeju Island" width="70%">
+        <img class="sepia" src="alaska.jpg" alt="Jeju Island" width="70%">
+        <img class="drop-shadow" src="alaska.jpg" alt="Jeju Island" width="70%">
+    </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Padding</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+            p.simple {
+                border: 2px solid red;;
+                padding: 25px;
+            }
+
+            div.normalwidth {
+                background-color: red;
+                width: 300px;
+            }
+
+            div.widthwithpadding {
+                background-color: aquamarine;
+                width: 300px;
+                padding: 25px;
+            }
+
+            div.all {
+                background-color: blueviolet;
+                color: white;
+                padding: 25px;
+                width: 300px;
+                box-sizing: border-box;
+            }
+        </style>
+
+
+    </head>
+
+    <body>
+        <h1>Padding</h1>
+
+        <p class="simple">This is a preview text for padding.</p>
+
+        <h2>Relation between Width, Padding & Box-Sizing</h2>
+
+        <div class="normalwidth"><p>This div width size is 300px.</p></div>
+
+        <div class="widthwithpadding">
+            <p>This div width size is also 300px but 25px of padding is there. So, overall width will be 25px + 25px +300px = 350px.</p>
+        </div><br>
+
+        <div class="all">
+            <p>But here not due to use case of box-sizing property.</p>
+        </div>
+    </body>
+</html>

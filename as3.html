@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Attribute Selectors</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <style>
+            [title~="region"] {
+                border: 5px solid red;               
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Attribute Selectors</h1>
+
+        <h2>[attribute~="value"] Selector</h2>
+
+        <p>The link with title~="region" will be in red background.</p>
+
+        <img src="alps.jpg" title="mountains region" alt="alps" width="160px" height="120px">
+        <img src="cuba.jpg" title="green region" alt="cuba" width="160px" height="auto">
+        <img src="Dusbai.jpg" title="cityscape" alt="dubai" width="160px" height="120px">
+    </body>
+</html>

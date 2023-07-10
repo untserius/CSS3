@@ -1,0 +1,16 @@
+div {
+    float: left;
+    padding: 20px;
+}
+
+.div1 {
+    background-color: orange;
+}
+
+.div2 {
+    background-color: blueviolet;
+}
+
+.div3 {
+    background-color: greenyellow;
+}

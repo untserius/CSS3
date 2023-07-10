@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sticky Position</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+            div.sticky {
+                
+                position: sticky;
+                top: 0;
+                background-color: greenyellow;
+                border: 2px solid #4CAF50;
+
+            }
+
+            div.container {
+                position: relative;
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+                opacity: 0.4;
+            }
+
+            .topleft {
+                position: absolute;
+                top: 8px;
+                left: 16px;
+                font-size: 18px;
+            }
+
+            .topright {
+                position: absolute;
+                top: 8px;
+                right: 16px;
+                font-size: 18px;
+            }
+
+            .bottomleft {
+                position: absolute;
+                bottom: 8px;
+                left: 16px;
+                font-size: 18px;
+            }
+
+            .bottomright {
+                position: absolute;
+                bottom: 8px;
+                right: 16px;
+                font-size: 18px;
+            }
+
+            .centered {
+                position: absolute;
+                top: 50%;
+                width: 100%;
+                text-align: center;
+                font-size: 18px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Stciky Position</h1>
+
+        <div class="sticky">I am Sticky!</div>
+
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+        <h2>Positioning Text In an Image</h2>
+
+        <div class="container">
+            <img src="Prague.jpg" alt="Prague, Capital Czech Republic" height="300" width="1000">
+            <div class="topleft">Top Left</div>
+            <div class="topright">Top Right</div>
+            <div class="bottomleft">Bottom Left</div>
+            <div class="bottomright">Bottom Right</div>
+            <div class="centered">Centered</div>
+        </div>
+    </body>
+</html>

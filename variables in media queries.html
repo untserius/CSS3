@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>VAriables in Media Queries</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <style>
+            :root {
+                --bgcolor: #000000;
+                --fontcolor: #0da40d;
+            }
+
+            .container {
+                --fontsize: 25px;
+            }
+
+            body {
+                background-color: var(--bgcolor);
+                color: var(--fontcolor);
+            }
+
+            .container p {
+                background-color: var(--fontcolor);
+                color: var(--bgcolor);
+                padding: 10px;
+                font-size: var(--fontsize);
+            }
+
+            @media screen and (min-width: 450px) {
+                .container {
+                    --fontsize: 50px;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Variables in Media Queries</h1>
+
+        <h2>Sample Heading</h2>
+
+        <div class="container">
+            <p>
+                Sunt laboris incididunt dolore do excepteur magna. Duis officia reprehenderit exercitation tempor est. Aliquip non laborum sit officia consectetur duis. Ut quis occaecat id sunt ad qui culpa quis aliquip et. Id ex minim qui minim esse aute laborum. Sint occaecat officia aliquip anim dolor id ex enim enim laborum duis elit cillum ipsum.
+            </p>
+        </div>
+    </body>
+</html>

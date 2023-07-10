@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Margins</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+            .alpha {
+                border: 5px solid black;
+                margin: auto;
+            }
+
+            .beta {
+                border: 5px solid black;
+                margin: 25px 15px;
+            }
+
+            .gamma {
+                border: 5px solid black;
+                margin: 25px 15px 5px;
+            }
+
+            .zeta {
+                border: 5px solid black;
+                margin: 25px 20px 15px 10px;
+            }
+
+            div {
+                border: 2px solid red;
+                margin-left: 100px;
+            }
+
+            .test {
+                margin-left: inherit;
+            }
+
+            #ma {
+                border: 2px solid red;
+                margin-bottom: 20px;
+            }
+
+            #mb {
+                border: 2px solid red;
+                margin-top: 30px;
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+        <h1>Margins</h1>
+
+        <p class="alpha">This is preview text for testing margins property in CSS.</p>
+
+        <p class="beta">This is preview text for testing margins property in CSS.</p>
+
+        <p class="gamma">This is preview text for testing margins property in CSS.</p>
+
+        <p class="zeta">This is preview text for testing margins property in CSS.</p>
+
+        <div>
+            <p class="test">This is preview text for testing margins property in CSS.</p>
+        </div>
+
+
+        <p>An example of margin collapse.</p>
+
+        <h1 id="ma">bottom margin = 20</h1>
+
+        <h2 id="mb">top margin = 30</h2>
+
+        <p>The margin gap should be 20 + 30 = 50 but there is only 30 due to collapse.</p>
+        
+    </body>
+</html>

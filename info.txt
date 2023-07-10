@@ -1,0 +1,14 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: IBMPlexMono-Bold
+font link: https://fonts.google.com/specimen/IBM+Plex+Mono
+font author: Mike Abbink
+font author site: https://www.mikeabbink.com/
+
+
+icon designer: IconPai
+icon designer link: /iconpai19
+        
+{"bg":"#EFF0F1","icon-gradient-0":"#574851","icon-gradient-1":"#95A8B1","font":"#28282D","slogan":"#3c3c41"}
+      

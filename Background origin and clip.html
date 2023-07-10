@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Background Clip & Origin Property</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <style>
+            #borderbox {
+                border: 20px solid black;
+                padding: 50px;
+                background: url(tree.jpg) no-repeat;
+                background-origin: border-box;
+            }
+
+            #paddingbox {
+                border: 20px solid black;
+                padding: 50px;
+                background: url(tree.jpg) no-repeat;
+            }
+
+            #contentbox {
+                border: 20px solid black;
+                padding: 50px;
+                background: url(tree.jpg) no-repeat;
+                background-origin: content-box;
+            }
+
+            #clip1 {
+                border: 10px dotted black;
+                padding: 50px;
+                background-color: purple;
+                color: white;
+            }
+
+            #clip2 {
+                border: 10px dotted black;
+                padding: 50px;
+                background-color: purple;
+                color: white;
+                background-clip: padding-box;
+            }
+
+            #clip3 {
+                border: 10px dotted black;
+                padding: 50px;
+                background-color: purple;
+                color: white;
+                background-clip: content-box;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <h1>Background Origin</h1>
+
+        <p><strong>The property which allows you to control background image or color within the element.</strong></p>
+
+        <div id="borderbox">
+            <p>background-origin: border-box(default);</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div><br>
+
+        <div id="paddingbox">
+            <p>background-origin: padding-box;</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div><br>
+
+        <div id="contentbox">
+            <p>background-origin: content-box;</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+
+        <h1>Background Clip</h1>
+
+        <p><strong>The property which allows you to control which parts of the background are visible within that element.</strong></p>
+
+        <div id="clip1">
+            <p>background-clip: border-box(default);</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div><br>
+
+        <div id="clip2">
+            <p>background-clip: padding-box;</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div><br>
+
+        <div id="clip3">
+            <p>background-clip: content-box;</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+    </body>
+</html>

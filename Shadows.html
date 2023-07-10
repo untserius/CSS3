@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Shadows</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <style>
+            #ms {
+                text-shadow: 0 0 5px orange, 0 0 10px red;
+            }
+
+            #ms2 {
+                text-shadow: 0 0 2px black, 0 0 20px blue, 0 0 6px darkblue;
+                color: white;
+            }
+
+            #bs {
+                padding: 15px;
+                height: 100px;
+                width: 450px;
+                background-color: skyblue;
+                box-shadow: 20px 20px darkblue;
+            }
+
+            #bs2 {
+                padding: 15px;
+                height: 100px;
+                width: 450px;
+                color: white;
+                background-color: coral;
+                box-shadow: 20px 20px 10px maroon;
+            }
+
+            #bs3 {
+                padding: 15px;
+                height: 100px;
+                width: 450px;
+                background-color: violet;
+                box-shadow: 20px 20px 10px 20px purple;
+            }
+
+            #bs4 {
+                padding: 15px;
+                height: 100px;
+                width: 450px;
+                color: white;
+                background-color: red;
+                box-shadow: 20px 20px 10px brown inset;
+            }
+
+            #bs5 {
+                padding: 15px;
+                height: 100px;
+                width: 450px;
+                border: 1px solid;
+                box-shadow: 5px 5px yellow, 10px 10px red, 15px 15px black;
+            }
+
+            #bs6 {
+                padding: 15px;
+                height: 100px;
+                width: 450px;
+                border: 1px solid;
+                box-shadow: 5px 5px 10px yellow, 10px 10px 10px red, 15px 15px 10px black;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h2>Multiple Text Shadows</h2>
+
+        <p id="ms">Sample Text</p>
+
+        <p id="ms2">Sample Text 2</p>
+
+        <h2>Box Shadows</h2>
+
+        <div id="bs">
+            <p>This is a preview text box shadow.</p>
+            <p style="font-family: monospace;"><strong>SYNTAX:</strong> box-shadow: horizontal value, vertical value, blur, color;</p>
+        </div><br><br>
+
+        <div id="bs2">
+            <p>This is a preview text box with blur effect.</p>
+            <p style="font-family: monospace;"><strong>SYNTAX:</strong> box-shadow: horizontal value, vertical value, blur, color;</p>
+        </div><br><br>
+
+        <div id="bs3">
+            <p>This is a preview text box with spread radius parameter.</p>
+            <p style="font-family: monospace;"><strong>SYNTAX:</strong> box-shadow: horizontal value, vertical value, blur, spread radius, color;</p>
+        </div><br><br><br>
+
+        <div id="bs4">
+            <p>This is a preview text box with inset parameter.</p>
+            <p style="font-family: monospace;"><strong>SYNTAX:</strong> box-shadow: horizontal value, vertical value, blur, color, inset;</p>
+        </div><br><br>
+
+        <div id="bs5">
+            <p>This is a preview text box with multiple shadows.</p>
+            </div><br><br>
+
+        <div id="bs6">
+            <p>This is a preview text box with multiple shadows(blur).</p>
+            </div><br><br>
+
+    </body>
+</html>

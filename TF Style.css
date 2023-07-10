@@ -1,0 +1,31 @@
+div {
+
+	background-color: black;
+	margin: 10px;
+	border: 2px solid grey;
+	padding: 10px;
+
+}
+
+h1 {
+
+	text-align: center;
+	text-transform: uppercase;
+	color: lightblue;
+	text-shadow: 2px 2px darkblue;
+
+}
+
+p {
+
+	text-indent: 50px;
+	text-align: justify;
+	color: lightgreen;
+	text-spacing: 3px;
+	
+}
+
+a {
+
+	text-decoration: none;
+}

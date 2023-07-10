@@ -1,0 +1,31 @@
+div {
+    float: left;
+    padding: 15px;
+}
+
+img.apple {
+    float: right;
+}
+
+img.grapes {
+    float: left;
+}
+
+div.apple {
+    
+    border: 2px solid brown;
+    padding: 10px;
+    text-align: justify;
+    margin: 5px;
+    overflow: auto;
+    
+}
+
+div.grapes {
+    border: 2px solid black;
+    padding: 10px;
+    text-align: justify;
+    margin: 5px;
+    overflow: auto;
+    
+}

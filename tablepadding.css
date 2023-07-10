@@ -1,0 +1,43 @@
+			table {
+	            width: 100%;
+	            border-collapse: collapse;
+                }
+
+            th, td {
+	            text-align: left;
+	            padding: 15px;
+                }
+            
+        .one table, .one td, .one th {
+	            border: 2px solid maroon;
+                }
+
+        .two table, .two td, .two th {
+	            border-bottom: 3px solid burlywood;
+                }
+
+		.three tr:hover {
+			background-color: purple;
+			color: white;
+		}
+
+		.three table, .three td, .three th {
+			border: 2px solid black;
+			}
+
+		.four tr:nth-child(even) {
+			background-color: aquamarine;
+		}
+
+		.five tr:nth-child(even) {
+			background-color: bisque;
+		}
+
+		.five th {
+			background-color: green;
+			color: white;
+		}
+
+		.five table, .five td, .five th {
+			border: 1px solid black;
+		}

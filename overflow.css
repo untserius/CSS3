@@ -1,0 +1,31 @@
+div.visible {
+    overflow: visible;
+    background-color: black;
+    color: red;
+    width: 400px;
+    height: 200px; 
+}
+
+div.hidden {
+    overflow: hidden;
+    background-color: black;
+    color: red;
+    width: 400px;
+    height: 200px;
+}
+
+div.scroll {
+    overflow: scroll;
+    background-color: black;
+    color: red;
+    width: 400px;
+    height: 200px;
+}
+
+div.auto {
+    overflow: auto;
+    background-color: black;
+    color: red;
+    width: 400px;
+    height: 200px;
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Coloured Lists</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+            ul {
+                list-style-type: square;
+                background: red;
+                padding: 20px;
+            }
+
+            ul li {
+                background: lightcoral;
+                color: maroon;
+                margin-left: 20px;
+                padding: 5px;
+            }
+
+            ol {
+                list-style-type: square;
+                background: rgb(31, 63, 226);
+                padding: 20px;
+            }
+
+            ol li {
+                background: darkblue;
+                color: lightblue;
+                margin: 15px;
+                padding: 5px;
+            }
+
+            ul.three {
+                list-style-type: none;
+                background: rgb(215, 215, 215);
+                border-left: 5px solid red;
+                margin: 5px;
+                padding: 5px 10px;
+            }
+
+            ul.three li {
+                color: black;
+                background: rgb(215, 215, 215);
+            }
+
+            ul.four {
+                list-style-type: none;
+                background: white;
+                padding: 0px;
+                border: 2px solid #ddd;
+            }
+
+            ul.four li {
+                background: white;
+                color: black;
+                border-bottom: 2px solid #ddd;
+                margin-left: 0px;
+                padding: 5px;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <h1>Coloured Lists Examples</h1>
+
+        <h3>Example 1</h3>
+        <h5>Dark Background, Light Foreground</h5>
+
+        <ul>
+            <li>Tea</li>
+            <li>Coffee</li>
+            <li>Bread</li>
+            <li>Milk</li>
+            <li>Eggs</li>
+        </ul>
+
+        <h3>Example 2</h3>
+        <h5>Light Background, Dark Foreground</h5>
+
+        <ol>
+            <li>Tea</li>
+            <li>Coffee</li>
+            <li>Bread</li>
+            <li>Milk</li>
+            <li>Eggs</li>
+        </ol>
+
+        <h3>Example 3</h3>
+        <h5>List with a red left border</h5>
+
+        <ul class="three">
+            <li>Tea</li>
+            <li>Coffee</li>
+            <li>Bread</li>
+            <li>Milk</li>
+            <li>Eggs</li>
+        </ul>
+
+        <h3>Example 4</h3>
+        <h5>List with only border</h5>
+
+        <ul class="four">
+            <li>Tea</li>
+            <li>Coffee</li>
+            <li>Bread</li>
+            <li>Milk</li>
+            <li>Eggs</li>
+        </ul>
+    </body>
+</html>

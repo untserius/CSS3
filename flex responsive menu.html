@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: lavender;
+        }
+
+        .flex-container > div a {
+            color: black;
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        .active {
+            background-color: black;
+        }
+
+        .active a {
+            color: white !important;
+        }
+
+        .flex-container > div:not(.active) a:hover {
+            background-color: black;
+            color: white;
+        }
+
+        .flex-item1 {
+            flex: 25%;
+        }
+
+        .flex-item2 {
+            flex: 25%;
+        }
+
+        .flex-item3 {
+            flex: 25%;
+        }
+
+        .flex-item4 {
+            flex: 25%;
+        }
+
+        @media screen and (max-width: 600px) {
+            .flex-container > div {
+                flex: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Responsive Flex Menu</h1>
+
+    <div class="flex-container">
+        <div class="flex-item1"><a href="#">Home</a></div>
+        <div class="flex-item2 active"><a href="#">Products</a></div>
+        <div class="flex-item3"><a href="#">About</a></div>
+        <div class="flex-item4"><a href="#">Reviews</a></div>
+    </div>
+</body>
+</html>

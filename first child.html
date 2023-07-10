@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pseudo Class</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <style>
+            /*
+            p:first-child {
+                color: red;;
+            }
+
+            p i:first-child {
+                color: blue;
+            }
+            */
+
+            p:first-child i {
+                color: red;;
+            }
+
+            input:focus {
+                background-color: yellow;;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <!--<h1>Pseudo-class Continued</h1>
+
+        <h2>CSS - The :first-child Pseudo-class</h2>
+
+        <h3>Match the first p element</h3>
+
+        <p>Some content.</p>
+        <p>Some content.</p>
+
+        <div>
+            <p>Some content.</p>
+            <p>Some content.</p>
+        </div>
+
+        <p>My name is <i>Sudhir Das.</i></p>
+        <p>My name is <i>Sudhir Das.</i></p>-->
+
+        <p>My name is <i>Sudhir Das</i>. I live in <i>Phulbani, Kandhamal</i></p>
+        <p>My name is <i>Sudhir Das</i>. I live in <i>Phulbani, Kandhamal</i></p>
+
+        <div>
+            <p>My name is <i>Sudhir Das</i>. I live in <i>Phulbani, Kandhamal</i></p>
+            <p>My name is <i>Sudhir Das</i>. I live in <i>Phulbani, Kandhamal</i></p>
+        </div>
+
+        <h2>Focus Pseudo Class Usecase</h2>
+
+        <form>
+            <label>First Name:</label>
+            <input type="text" name="fname"><br><br>
+            <label>Last Name:</label>
+            <input type="text" name="lname"><br><br>
+            <input type="submit">
+        </form>
+        
+
+    </body>
+</html>

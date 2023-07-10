@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Flexbox</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="flexbox.css">
+    </head>
+
+    <style>
+        
+    </style>
+    <body>
+        <h1>Flexbox</h1>
+
+        <p>The coral coloured box is the flexbox.container and 1..4 are child elements.</p>
+
+        <div class="flex-container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+
+        <h2>Properties</h2>
+
+        <h3>flex-direction</h3>
+        <p>Flex direction here is set to column.</p>
+        <div class="flex-container1">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+        <p>Flex direction here is set to column-reverse.</p>
+        <div class="flex-container2">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+        <p>Flex direction here is set to row.</p>
+        <div class="flex-container3">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+        <p>Flex direction here is set to row-reverse.</p>
+        <div class="flex-container4">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+
+        <h3>flex-wrap</h3>
+        <p>The wrap property specifies wheter the following items should wrap or not.</p>
+
+        <p>flex-wrap is set to wrap.</p>
+        <div class="flex-container5">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+            <div>11</div>
+            <div>12</div>
+        </div>
+        <p>flex-wrap is set to nowrap.</p>
+        <div class="flex-container6">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+            <div>11</div>
+            <div>12</div>
+        </div>
+        <p>flex-wrap is set to reverse-wrap.</p>
+        <div class="flex-container7">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+            <div>11</div>
+            <div>12</div>
+        </div>
+
+        <h3>flex-flow</h3>
+        <p>Shorthand for both frex-direction and flex-wrap properties.</p>
+
+        <div class="flex-container8">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+            <div>11</div>
+            <div>12</div>
+        </div>
+
+        <h3>justify-content</h3>
+
+        <p>justify-content: center</p>
+        <div class="flex-container9">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+        <p>justify-content: flex-start</p>
+        <div class="flex-container10">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+        <p>justify-content: flex-end</p>
+        <div class="flex-container11">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+        <p>justify-content: space-around</p>
+        <div class="flex-container12">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+        <p>justify-content: space-between</p>
+        <div class="flex-container13">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+
+        <h3>align-items</h3>
+        <p>To align flex items.</p>
+
+        <p>align-items: center</p>
+        <div class="flex-container14">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+        <p>align-items: flex-start</p>
+        <div class="flex-container15">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+        <p>align-items: flex-end</p>
+        <div class="flex-container16">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+        <p>align-items: stretch</p>
+        <div class="flex-container17">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+        <p>align-items: baseline</p>
+        <div class="flex-container18">
+            <div><h1>1</h1></div>
+            <div><h6>2</h6></div>
+            <div><h3>3</h3></div>
+            <div><small>4</small></div>
+        </div>
+
+        <h3>align-content</h3>
+        <p>to align the flex lines.</p>
+
+        <p>align-content: center</p>
+        <div class="flex-container19">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>x</div>
+            <div>x</div>
+            <div>x</div>
+            <div>x</div>
+            <div>x</div>
+            <div>x</div>
+            <div>x</div>
+            <div>x</div>
+            <div>x</div>
+            
+        </div>
+        <p>align-content: flex-start</p>
+        <div class="flex-container20">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>x</div>
+            <div>x</div>
+            <div>x</div>
+            <div>x</div>
+            <div>x</div>
+            <div>x</div>
+            <div>x</div>
+            <div>x</div>
+            <div>x</div>
+        </div>
+
+        <p>align-content: flex-end</p>
+        <div class="flex-container21">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>x</div>
+            <div>x</div>
+            <div>x</div>
+            <div>x</div>
+            <div>x</div>
+            <div>x</div>
+            <div>x</div>
+            <div>x</div>
+            <div>x</div>
+        </div>
+
+        <p>align-content: space-around</p>
+        <div class="flex-container22">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>x</div>
+            <div>x</div>
+            <div>x</div>
+            <div>x</div>
+            <div>x</div>
+            <div>x</div>
+            <div>x</div>
+            <div>x</div>
+            <div>x</div>
+        </div>
+
+        <p>align-content: space-between</p>
+        <div class="flex-container23">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>x</div>
+            <div>x</div>
+            <div>x</div>
+            <div>x</div>
+            <div>x</div>
+            <div>x</div>
+            <div>x</div>
+            <div>x</div>
+            <div>x</div>
+        </div>
+
+        <p>align-content: stretch</p>
+        <div class="flex-container24">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>x</div>
+            <div>x</div>
+            <div>x</div>
+            <div>x</div>
+            <div>x</div>
+            <div>x</div>
+            <div>x</div>
+            <div>x</div>
+            <div>x</div>
+        </div>
+
+        <h3>Perfect Centering</h3>
+
+        <p>Special Case</p>
+
+        <div class="perfect-box">
+            <div>The box is centered perfectly using justify-content and align-items property set to center.</div>
+        </div>
+
+    </body>
+</html>

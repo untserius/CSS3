@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Display</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="Display.css">
+        
+    </head>
+
+    <body>
+        <h1>Display</h1>
+
+        <h2>Override the default dispaly value</h2>
+
+        <h3>display:inline</h3>
+
+        <caption>- using block elements look like inline elements by making them single line.</caption><br><br>
+
+        
+        <p class="block">cbkjfbvlewbvburieggrbglgubvirbg</p>
+        <p class="block">efyuveyvcevefvefvefvefebvfifveifvvwfe</p>
+        
+
+        <h3>display:block</h3>
+
+        <caption>- using inline elements look like block elements by making them single line.</caption><br><br>
+
+        <a class="inline" href="https://www.google.com" target="_blank">Google</a>
+        <a class="inline" href="https://www.yahoo.com" target="_blank">Yahoo!</a>
+        <a class="inline" href="https://www.meta.com" target="_blank">Meta</a>
+        <a class="inline" href="https://www.bing.com" target="_blank">Bing</a>
+        <a class="inline" href="https://www.netflix.com" target="_blank">Netflix</a>
+
+        <h3>Using CSS together with Javascript to show content.</h3>
+
+        <p class="flip" onclick="myFunction()">Click to show panel!</p>
+
+        <div id="panel">
+            <p>This is preview of my progress to show you that I have understood how to use the Javascript to be able to preview a panel function.</p>
+            <p>Although I have not yet started my Javascript series.</p>
+        </div>
+
+        <script>
+            function myFunction() {
+                document.getElementById("panel").style.display = "block";
+            }
+        </script>
+
+    </body>
+</html>

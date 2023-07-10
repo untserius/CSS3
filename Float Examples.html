@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Float Examples</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="floatexample.css">
+    </head>
+
+    <body>
+        <h1>Float Property</h1>
+
+        <h3>Two Equal Halves</h3>
+        <div class="clearfix">
+            <div class="twoequal" style="background-color: rgba(255, 255, 0, 1);">Box 1</div>
+            <div class="twoequal" style="background-color: rgba(200, 200, 0, 1);">Box 2</div>
+        </div>
+        
+        <h3>Three Equal Halves</h3>
+        <div class="clearfix">
+            <div class="threeequal" style="background-color: rgba(0, 156, 255, 1);">Box 3</div>
+            <div class="threeequal" style="background-color: rgba(0, 156, 200, 1);">Box 4</div>
+            <div class="threeequal" style="background-color: rgba(0, 156, 150, 1);">Box 5</div>
+        </div>
+
+        <h2>Images Side By Side</h2>
+
+        <div >
+            <img class="images" src="Kedarnath.jpg" alt="Kedarnath Temple" height="300px" width="250px">
+            <img class="images" src="Tungnath.jpg" alt="Tungnath" height="300px" width="250px">
+            <img class="images" src="Mussorie.jpg" alt="Mussorie" height="300px" width="250px">
+        </div>
+
+        <h2>Equal Height Boxes</h2>
+
+        <div class="clearfix">
+            <div class="heightbox" style="background-color: rgba(255, 0, 255, 1);">
+                <h1>Box 1</h1>
+                <p>This is a preview, This is a preview, This is a preview</p>
+            </div>
+            <div class="heightbox" style="background-color: rgba(255, 200, 200, 1);">
+                <h1>Box 2</h1>
+                <p>This is another preview.</p>
+                <p>This is another preview.</p>
+                <p>This is another preview.</p>
+                <p>This is another preview.</p>
+            </div>
+        </div>
+
+        <P><strong>Note:</strong> As you can see some content of Box 2 are outside of the box. To fix this issue, we have to use the help of CSS Flexbox feature.</P>
+    </body>
+</html>

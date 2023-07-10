@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Horizontal Navigation Bar</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <style>
+            body {
+                margin: 0;
+            }
+
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                background-color: blueviolet;
+                overflow: hidden;
+                
+            }
+
+            li {
+                float: left;
+            }
+
+            li a {
+                display: block;
+                padding: 10px 14px;
+                text-decoration: none;
+                color: white;
+                text-align: center;
+                border-right: 1px solid white;
+            }
+
+            li:last-child {
+                border-right: none;
+            }
+
+            li a:hover {
+                background-color: black;
+
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Horizontal Navigation Bar</h1>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#support">Support</a></li>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Box Sizing Property</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <style>
+        .nobox {
+            height: 100px;
+            width: 400px;
+            border: 1px solid black;
+        }
+
+        .nobox2 {
+            height: 100px;
+            width: 400px;
+            border: 1px solid black;
+            padding: 10px 0px;
+        }
+
+        .box {
+            height: 100px;
+            width: 400px;
+            border: 1px solid black;
+            padding: 10px 0px;
+            box-sizing: border-box;
+        }
+    </style>
+
+    <body>
+        <h1>box-sizing property</h1>
+
+        <div class="nobox">
+            <p>height is 100px and width is 400px</p>
+        </div>
+
+        <p>The following looks bigger due to presence of padding property.</p>
+        <div class="nobox2">
+            <p>height is 100px and width is 400px</p>
+        </div>
+
+        <p>Inspite of having same padding property it looks same as original(1st one).</p>
+        <div class="box">
+            <p>height is 100px and width is 400px</p>
+        </div>
+    </body>
+</html>

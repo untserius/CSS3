@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Counters</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <style>
+            body {
+                counter-reset: section;
+            }
+
+            h1, h2 {
+                text-align: center;
+            }
+
+            h3::before {
+                counter-increment: section;
+                content: "Section " counter(section) ": ";
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Automatic Numbering with Counters</h1>
+
+        <h2>Chapters</h3>
+
+        <h3>Hyper Text Markup Language</h3>
+        <h3>Cascade Style Sheet</h3>
+        <h3>Javascript</h3>
+        <h3>SQL</h3>
+        <h3>Java</h3>
+        <h3>Python</h3>
+        <h3>PHP</h3>
+
+    </body>
+</html>

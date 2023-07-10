@@ -1,0 +1,52 @@
+img {
+    opacity: 0.5;
+}
+
+img:hover {
+    opacity: 1;
+}
+
+img.reverse {
+    opacity: 1;
+}
+
+img.reverse:hover {
+    opacity: 0.5;
+}
+
+div {
+    background-color: blue;
+    color: white;
+    padding: 20px;
+}
+
+div.first {
+    opacity: 0.15;
+}
+
+div.second {
+    opacity: 0.35;
+}
+
+div.third {
+    opacity: 0.65;
+}
+
+div.background {
+    background: url('Hawai.jpg');
+    border: 2px solid black;
+    
+}
+
+div.transbox {
+    background-color: black;
+    border: 2px solid white;
+    margin: 30px;
+    opacity: 0.6;
+}
+
+div.transbox p {
+    margin: 5%;
+    font-weight: bold;
+    color: white;
+}

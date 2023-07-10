@@ -1,0 +1,26 @@
+div {
+    border: 2px solid black;
+}
+
+.div1 {
+    float: left;
+}
+
+.div3 {
+    float: left;
+}
+
+.div4 {
+    clear: left;
+}
+
+img {
+    float: right;
+}
+
+.clearfix {
+    clear: right;
+}
+.div6 {
+    overflow: auto;
+}

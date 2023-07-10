@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The object-fit property</title>
+        <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+
+        <style>
+            #cover {
+                width: 400px;
+                height: 300px;
+                object-fit: cover;
+            }
+
+            #contain {
+                width: 200px;
+                height: 200px;
+                object-fit: contain;
+            }
+
+            #fill {
+                width: 500px;
+                height: 500px;
+                object-fit: fill;
+            }
+
+            #none {
+                width: 500px;
+                height: 500px;
+                object-fit: none;
+            }
+
+            .no-objectfit {
+                width: 50%;
+                height: 400px;
+            }
+
+            .objectfit {
+                width: 50%;
+                height: 400px;
+            }
+
+            #example1 {
+                float: left;
+                width: 50%;
+                height: 100%;
+            }
+
+            #example2 {
+                float: left;
+                width: 50%;
+                height: 100%;
+                object-fit: cover;
+            }
+            
+            #rio {
+                width: 200px;
+                height: 500px;
+                object-fit: cover;
+            }
+
+            #rio2 {
+                width: 200px;
+                height: 500px;
+                object-fit: cover;
+                object-position: 75% 100%;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>The object-fit Property</h1>
+
+        <h2>Original</h2>
+
+        <img src="ams.jpg">
+
+        <h2>Using object-fit: cover</h2>
+
+        <img id="cover" src="ams.jpg">
+
+        <h2>Using object-fit: contain</h2>
+
+        <img id="contain" src="ams.jpg">
+
+        <h2>Using object-fit: fill</h2>
+
+        <img id="fill" src="ams.jpg">
+
+        <h2>Using object-fit: none</h2>
+
+        <img id="none" src="ams.jpg">
+
+        <p>In the following 2 images, <strong>we do not use object-fit</strong>. See what happens on resizing the browser window.<p>
+
+        <div class="no-objectfit">
+            <img id="example1" src="sweden.jpg">
+            <img id="example1" src="syria.jpg">
+        </div>
+
+        <p>As you can see the aspect ratio of both the images is destroyed.</p>
+
+        <p>Now, In the following 2 images, we use <strong>object-fit: cover</strong>. See what happens on resizing the browser window.</p>
+
+        <div class="objectfit">
+            <img id="example2" src="sweden.jpg">
+            <img id="example2" src="syria.jpg">
+        </div>
+
+        <h1>The object-position Property</h1>
+
+        <img id="rio" src="rio.jpg">
+
+        <p>Now, we want to bring Christ Statue to be in the aspect ratio or given dimensions.</p>
+
+        <p>Here we can achieve by using <strong>object-postition property</strong>.</p>
+
+        <img id="rio2" src="rio.jpg">
+    </body>
+</html>

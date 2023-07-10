@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>3D Transition</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <style>
+            .xaxis {
+                width: 200px;
+                height: 100px;
+                background-color: orange;
+                color: white;
+                text-align: center;
+                transform: matrix3d(1, 0, 0, 0,
+                     0, cos(0), sin(0), 0,
+                     0, -sin(0), cos(0), 0,
+                     0, 0, 0, 1);
+            }
+
+            .yaxis {
+                width: 200px;
+                height: 100px;
+                background-color: orange;
+                color: white;
+                text-align: center;
+                transform: rotateY(150deg);
+            }
+
+            .zaxis {
+                width: 200px;
+                height: 100px;
+                background-color: orange;
+                color: white;
+                text-align: center;
+                transform: rotateZ(90deg);
+            }
+
+            p {
+                transform: translate(0px, 40px);
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>3D Transitions</h1>
+
+        <h2>rotate</h2>
+
+        <div class="xaxis">
+            <p>This is rotated in its X-axis</p>
+        </div>
+
+        <div class="yaxis">
+            <p>This is rotated in its Y-axis</p>
+        </div>
+
+        <div class="zaxis">
+            <p>This is rotated in its Z-axis</p>
+        </div>
+    </body>
+</html>

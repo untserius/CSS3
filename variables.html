@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>variables</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <style>
+            :root {
+                --maroon: maroon;
+                --white: white;
+            }
+
+            body {
+                background-color: var(--maroon);
+                color: var(--white);
+            }
+
+            h2 {
+                --heading-blue: darkblue;
+                color: var(--heading-blue);
+                text-shadow: 1px 2px 3px var(--white);
+            }
+
+            .container {
+                --white: lightgreen;
+                background-color: var(--white);
+                color: var(--maroon);
+                padding: 10px
+            }
+
+            .note {
+                --note-color: rgb(226, 122, 101);
+                color: var(--note-color);
+                font-size: 10px;
+                font-style: italic;
+
+            }
+
+            button {
+                background-color: var(-white);
+                color: var(--maroon);
+                border-color: var(--maroon);
+                padding: 5px 10px;
+                margin-top: 10px;
+            }
+
+
+
+        </style>
+    </head>
+
+    <body>
+        <h1>Override global variable with local variable.</h1>
+
+        <h2>Sample Heading</h2>
+
+        <p class="note">I have added a new local variable for element h2.</p>
+
+        <div class="container">
+            <p>
+                Ad officia ut ullamco laboris voluptate mollit eiusmod magna consequat adipisicing cupidatat ut aute. Dolore labore et nulla cillum do sint dolor laboris amet voluptate velit ipsum nulla. Adipisicing magna cupidatat aliqua sunt ea ex. Exercitation irure ut minim quis sit exercitation nisi irure fugiat anim sunt non Lorem consequat. Ipsum duis amet aliqua id veniam ad ut fugiat ipsum.
+            </p>
+        </div>
+
+        <button>Yes</button>
+        <button>No</button>
+
+        
+    </body>
+</html>

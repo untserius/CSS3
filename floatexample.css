@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+.twoequal {
+    float: left;
+    color: black;
+    padding: 50px;
+    width: 50%;
+    text-align: center;
+    
+}
+
+.threeequal {
+    float: left;
+    background-color: blue;
+    color: aliceblue;
+    padding: 50px;
+    width: 33.33%;
+    text-align: center;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.images {
+    float: left;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 33.33%;
+}
+
+.heightbox {
+    float: left;
+    padding: 10px;
+    width: 50%;
+    height: 150px;
+    text-align: center;
+}

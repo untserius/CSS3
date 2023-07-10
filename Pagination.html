@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pagination</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <style>
+
+        /* Simple Pagination */
+        .pagination {
+            display: inline-block;
+        }
+
+        .pagination a {
+            color: black;
+            float: left;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+
+        .pagination a.active {
+            text-decoration: underline;
+        }
+
+        /* Active and Hoverable */
+        .pagination2 {
+            display: inline-block;
+        }
+
+        .pagination2 a {
+            color: black;
+            float: left;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+
+        .pagination2 a.active2 {
+            background-color: red;
+            color: white;
+        }
+
+        .pagination2 a:hover:not(.active2) {
+            background-color: grey;
+            color: white;
+        }
+
+        /*Rounded Active and Hoverable */
+        .pagination3 {
+            display: inline-block;
+        }
+
+        .pagination3 a {
+            border-radius: 5px;
+            color: black;
+            float: left;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+
+        .pagination3 a.active3 {
+            background-color: darkblue;
+            color: white;
+        }
+
+        .pagination3 a:hover:not(.active3) {
+            background-color: lightskyblue;
+            color: black;
+        }
+
+        /* Hoverable Transition Effect*/
+        .pagination4 {
+            display: inline-block;
+        }
+
+        .pagination4 a {
+            color: black;
+            text-decoration: none;
+            padding: 8px 16px;
+            float: left;
+            transition: background-color .4s;
+        } 
+
+        .pagination4 a.active4 {
+            background-color: green;
+            color: white;
+        }
+
+        .pagination4 a:hover:not(.active4) {
+            background-color: grey;
+            color: white;
+        }
+
+        /* Bordered Pagination*/
+        .pagination5 {
+            display: inline-block;
+        }
+
+        .pagination5 a {
+            border: 1px solid grey;
+            color: black;
+            text-decoration: none;
+            padding: 8px 16px;
+            float: left;
+            transition: background-color .4s;
+        } 
+
+        .pagination5 a.active5 {
+            background-color: orange;
+            color: white;
+        }
+
+        .pagination5 a:hover:not(.active5) {
+            background-color: grey;
+            color: white;
+        }
+
+        /*Space b/w links*/
+        .pagination6 {
+            display: inline-block;
+        }
+
+        .pagination6 a {
+            margin: 0 5px;
+            border: 1px solid grey;
+            color: black;
+            text-decoration: none;
+            padding: 8px 16px;
+            float: left;
+            transition: background-color .4s;
+        } 
+
+        .pagination6 a.active6 {
+            background-color: orange;
+            color: white;
+            border: none;
+        }
+
+        .pagination6 a:hover:not(.active6) {
+            background-color: grey;
+            color: white;
+        }
+    </style>
+    <body>
+        <h1>Pagination</h1>
+
+        <h2>Simple Pagination</h1>
+
+        <div class="pagination">
+            <a href="#">&laquo;</a>
+            <a href="#">1</a>
+            <a href="#" class="active">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">&raquo;</a>
+        </div>
+
+        <h2>Active and Hoverable Pagination</h1>
+
+        <div class="pagination2">
+            <a href="#">&laquo;</a>
+            <a href="#">1</a>
+            <a href="#" class="active2">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">&raquo;</a>
+        </div>
+
+        <h2>Rounded Active and Hoverable Pagination</h1>
+
+        <div class="pagination3">
+            <a href="#">&laquo;</a>
+            <a href="#">1</a>
+            <a href="#" class="active3">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">&raquo;</a>
+        </div>
+
+        <h2>Hoverable Transition Effect</h2>
+
+        <div class="pagination4">
+            <a href="#">&laquo;</a>
+            <a href="#">1</a>
+            <a href="#" class="active4">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">&raquo;</a>
+        </div>
+
+        <h2>Bordered Pagination</h2>
+
+        <div class="pagination5">
+            <a href="#">&laquo;</a>
+            <a href="#">1</a>
+            <a href="#" class="active5">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">&raquo;</a>
+        </div>
+
+        <h2>Space Between Links</h2>
+
+        <div class="pagination6">
+            <a href="#">&laquo;</a>
+            <a href="#">1</a>
+            <a href="#" class="active6">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">&raquo;</a>
+        </div>
+    </body>
+</html>

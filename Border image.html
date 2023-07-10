@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Border Image</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <style>
+            .borderimage {
+                border: 10px solid transparent;
+                padding: 15px;
+                border-image: url(border.png) 30 round;
+            }
+
+            .borderimage2 {
+                border: 10px solid transparent;
+                padding: 15px;
+                border-image: url(border.png) 30 stretch;
+            }
+
+            .borderimage3 {
+                border: 10px solid transparent;
+                padding: 15px;
+                border-image: url(border.png) 50 round;
+            }
+
+            .borderimage4 {
+                border: 10px solid transparent;
+                padding: 15px;
+                border-image: url(border.png) 20% round;
+            }
+
+            .borderimage5 {
+                border: 10px solid transparent;
+                padding: 15px;
+                border-image: url(border.png) 30% round;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Border Image</h1>
+
+        <p>Original Image</p>
+        <img src="border.png"><br><br>
+
+        <p>1.</p>
+
+        <p class="borderimage">30 round ......</p>
+
+        <p>2.</p>
+        <p class="borderimage2">30 stretch ....</p>
+
+        <p>3.</p>
+        <p class="borderimage3">50 round ....</p>
+
+        <p>4.</p>
+        <p class="borderimage4">20% round ....</p>
+
+        <p>5.</p>
+        <p class="borderimage5">30% round ....</p>
+    </body>
+</html>

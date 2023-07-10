@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>var() function</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <style>
+        :root {
+            --orange: orange;
+            --white: white;
+        }
+
+        body {
+            background: var(--orange);
+        }
+
+        h2 {
+            border-bottom: 2px solid var(--orange);
+        }
+
+        .container {
+            background: var(--white);
+            color: var(--orange);
+            padding: 20px;
+        }
+
+        button {
+            background: var(--white);
+            color: var(--orange);
+            padding: 5px;
+            border: 1px solid var(--orange);
+        }
+    </style>
+
+    <body>
+        <h1>The var() function</h1>
+
+        <div class="container">
+            <h2>Color Design Sample</h2>
+
+            <p>Ut irure proident nisi minim eiusmod elit est ea irure. Irure ad voluptate nostrud qui id ad id in dolore ea commodo nisi enim voluptate. Sit commodo nostrud velit qui adipisicing duis tempor.</p>
+
+            <p>Deserunt sit ullamco ad voluptate fugiat qui culpa anim. Pariatur dolor in amet duis labore consectetur magna ullamco deserunt aute pariatur adipisicing aliquip. Ex ut tempor nulla nulla proident esse proident do consequat ex et ex.</p>
+
+            <button>Yes</button>
+            <button>No</button>
+        </div>
+    </body>
+</html>

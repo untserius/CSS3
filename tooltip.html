@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Tooltips</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <style>
+        .tooltip {
+            position: relative;
+            display: block;
+            border-bottom: 1px dotted black;
+            float: left;
+            width: 25%;
+            
+        }
+
+        .tooltiptext {
+            visibility: hidden;
+            width: 120px;
+            background: black;
+            color: white;
+            text-align: center;
+            padding:0 10px;
+            border-radius: 5px;
+        }
+        
+        .right {
+            position: absolute;
+            z-index: 1;
+            top: -5px;
+            left: 25%;
+        }
+
+        .left {
+            position: absolute;
+            z-index: 1;
+            top: -5px;
+            right: 105%;
+        }
+
+        .top {
+            position: absolute;
+            z-index: 1;
+            bottom: 100%;
+            left: 50%;
+            margin-left: -60px;
+        }
+
+        .bottom {
+            position: absolute;
+            z-index: 1;
+            top: 100%;
+            left: 50%;
+            margin-left: -60px;
+        }
+
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+        }
+    </style>
+    <body>
+        <h2>Basic Tooltip</h2>
+
+        <div class="tooltip">Right
+            <span class="tooltiptext right">Its me! Here</span>
+        </div>
+
+        <div class="tooltip">Left
+            <span class="tooltiptext left">Here!</span>
+        </div>
+
+        <div class="tooltip">Top
+            <span class="tooltiptext top">Here!</span>
+        </div>
+
+        <div class="tooltip">Bottom
+            <span class="tooltiptext bottom">Here!</span>
+        </div>
+    </body>
+</html>

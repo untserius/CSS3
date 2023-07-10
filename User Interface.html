@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>User Interface</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <style>
+            div.horizontal {
+                border: 1px solid black;
+                width: 300px;
+                padding: 20px;
+                resize: horizontal;
+                overflow: auto;
+            }
+
+            div.both {
+                border: 1px solid black;
+                width: 300px;
+                padding: 20px;
+                resize: both;
+                overflow: auto;
+            }
+
+            div.type1 {
+                border: 1px solid black;
+                margin: 20px;
+                outline: 2px solid green;
+                outline-offset: 15px;
+            }
+
+            div.type2 {
+                border: 1px solid black;
+                margin: 20px;
+                outline: 2px dotted red;
+                outline-offset: 5px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>The resize property</h1>
+
+        <div class="horizontal">
+            This box is horizontally resizable. Try to resize it by dragging the right side.
+        </div>
+
+        <div class="both">
+            This box is resizable from both sides. Try to resize it by dragging.
+        </div>
+
+        <h1>The outline-offset prperty</h1>
+
+        <p>The outline-offset property adds space between an outline and the edge/border of an element.</p>
+
+        <p>Here, the outline is positioned 15px away from the border of the element:</p>
+
+        <div class="type1">
+            <p>This is a paragraph.</p>
+        </div>
+
+        <p>Here, the outline is positioned 5px away from the border of the element:</p>
+
+        <div class="type2">
+            <p>This is a paragraph.</p>
+        </div>
+    </body>
+</html>
